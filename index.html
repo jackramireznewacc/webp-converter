@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>WebP Converter</title>
+  <style>
+    :root { color-scheme: dark; }
+    body { margin:0; font:16px/1.5 system-ui,-apple-system,Segoe UI,Roboto,Arial; background:#0b0f16; color:#e6edf3; }
+    .wrap { max-width: 980px; margin: 0 auto; padding: 48px 20px; }
+    .card { background:#0f1623; border:1px solid #1f2a3a; border-radius:16px; padding:24px; }
+    h1 { margin:0 0 8px; font-size:40px; }
+    p.lead { margin:0 0 18px; color:#b6c2d1; }
+    .row { display:flex; gap:12px; flex-wrap:wrap; margin: 18px 0 0; }
+    a.btn { display:inline-block; padding:10px 14px; border-radius:10px; border:1px solid #2b3b52; text-decoration:none; color:#e6edf3; background:#121b2b; }
+    a.btn:hover { border-color:#3d5a7a; }
+    code, pre { background:#0b1220; border:1px solid #1f2a3a; border-radius:12px; }
+    pre { padding:14px; overflow:auto; }
+    ul { margin: 10px 0 0 18px; }
+    .muted { color:#8fa3bd; font-size:13px; margin-top:18px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>WebP Converter</h1>
+      <p class="lead">Локальный GUI-конвертер изображений в WebP с интерактивной обрезкой и массовым переименованием.</p>
+
+      <div class="row">
+        <a class="btn" href="https://github.com/ТВОЙ_ЮЗЕР/ТВОЙ_РЕПО" target="_blank" rel="noreferrer">GitHub репозиторий</a>
+        <a class="btn" href="https://github.com/ТВОЙ_ЮЗЕР/ТВОЙ_РЕПО#быстрый-старт-запуск-из-исходников" target="_blank" rel="noreferrer">Быстрый старт</a>
+      </div>
+
+      <h2 style="margin-top:22px;">Возможности</h2>
+      <ul>
+        <li>Batch-конвертация JPG/PNG/TIFF/BMP → WebP</li>
+        <li>Интерактивная обрезка (с пресетами соотношений сторон)</li>
+        <li>Пресеты качества + ручной режим</li>
+        <li>Умное массовое переименование (генератор уникальных имён)</li>
+        <li>Полностью локальная обработка (ничего не загружается в интернет)</li>
+      </ul>
+
+      <h2 style="margin-top:22px;">Запуск</h2>
+      <pre><code>pip3 install -r requirements.txt
+python3 webp_converter.py</code></pre>
+
+      <div class="muted">© WebP Converter • MIT License</div>
+    </div>
+  </div>
+</body>
+</html>
